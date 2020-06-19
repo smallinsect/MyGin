@@ -24,3 +24,23 @@ https://github.com/gin-gonic/gin
 go get -u -v github.com/gin-gonic/gin
 ```
 
+下载之前需要设置代理
+
+
+
+
+
+初始化模块
+
+```
+go mod init smallinsect.com/go_5
+```
+
+
+
+
+
+
+
+
+
