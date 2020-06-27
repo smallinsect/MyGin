@@ -26,9 +26,23 @@ go get -u -v github.com/gin-gonic/gin
 
 下载之前需要设置代理
 
+开启Go Module
 
+```
+go env -w GO111MODULE=on
+```
 
+开启代理
 
+```
+go env -w GOPROXY=https://goproxy.cn,direct
+```
+
+查看环境变量修改
+
+```
+go env
+```
 
 初始化模块
 
