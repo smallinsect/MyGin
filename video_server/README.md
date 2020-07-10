@@ -3,9 +3,6 @@
 
 - https://github.com/julienschmidt/httprouter
 
-学习视频
-
-- https://www.bilibili.com/video/BV1Ci4y1s7d8
 
 ## 简单的网站
 
