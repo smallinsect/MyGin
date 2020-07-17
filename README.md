@@ -47,7 +47,7 @@ go env
 初始化模块
 
 ```
-go mod init smallinsect.com/go_5
+go mod init xuqiulin.com/mygin
 ```
 
 
