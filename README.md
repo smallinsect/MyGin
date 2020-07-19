@@ -50,11 +50,21 @@ go env
 go mod init xuqiulin.com/mygin
 ```
 
+## 错误
 
+\# runtime/cgo exec: "gcc": executable file not found in %PATH%
 
+安装mingw64不仅能编译64位程序，也能编译32位程序
 
+找到MinGW-W64-install.exe
 
+- https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/
 
+- https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/
+
+安装教程
+
+- https://jingyan.baidu.com/article/0320e2c11564ca1b87507b8f.html
 
 
 

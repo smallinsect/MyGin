@@ -20,3 +20,9 @@ http://gorm.io/docs/
 go get -u github.com/jinzhu/gorm
 ```
 
+引入mysql驱动
+
+```
+go get -u github.com/go-sql-driver/mysql
+```
+
