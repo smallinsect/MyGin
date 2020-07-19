@@ -11,6 +11,7 @@ type Product struct {
 	gorm.Model
 	Name      string `gorm:"type:varchar(20);not null"`
 	Telephone string `gorm:"type:varchar(20);not null"`
+	Password  string `gorm:"type:varchar(20);not null"`
 }
 
 func main() {
@@ -41,7 +42,7 @@ func main() {
 	db.AutoMigrate(&Product{})
 
 	// Create
-	db.Create(&Product{Name: "11111", Telephone: "1000"})
+	db.Create(&Product{Name: "11111", Telephone: "1000", Password: "2233"})
 
 	// Read
 	var product Product
