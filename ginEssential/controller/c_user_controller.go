@@ -68,11 +68,27 @@ func Login(ctx *gin.Context) {
 	}
 	// bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)
 
-	token := "1"
+	token, err := common.ReleaseToken(&user)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError,
+			gin.H{
+				"code": 500,
+				"msg":  "系统错误",
+			},
+		)
+		log.Println("token generate error", err)
+		return
+	}
 	// 用户存在 发放token
 	ctx.JSON(200, gin.H{
 		"code": 200,
 		"data": gin.H{"token": token},
 		"msg":  "登录成功",
 	})
+}
+
+func Info(ctx *gin.Context) {
+	// 直接从上下文获取信息
+	user, _ := ctx.Get("user")
+	ctx.JSON(http.StatusOK, gin.H{"code": 200, "data": gin.H{"user": user}})
 }

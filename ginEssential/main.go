@@ -1,12 +1,14 @@
 package main
 
 import (
-	"xuqiulin.com/mygin/ginEssential/common"
+	"fmt"
 
 	"github.com/gin-gonic/gin"
+	"xuqiulin.com/mygin/ginEssential/common"
 )
 
 func main() {
+	fmt.Println("hello")
 
 	//初始化数据库
 	db := common.InitDB()

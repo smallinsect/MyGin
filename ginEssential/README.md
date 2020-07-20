@@ -26,3 +26,9 @@ go get -u github.com/jinzhu/gorm
 go get -u github.com/go-sql-driver/mysql
 ```
 
+引入加密
+
+```
+go get -u github.com/dgrijalva/jwt-go
+```
+
